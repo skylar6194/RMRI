@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Influenza</string>
+    <string name="result_template">Negative acc to symptoms %1$f, High Chances of positive acc to symptoms %2$f</string>
+</resources>
