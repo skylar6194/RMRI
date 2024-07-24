@@ -1,3 +1,6 @@
+import com.android.build.api.dsl.AaptOptions
+import com.android.build.api.dsl.Packaging
+
 plugins {
 
     alias(libs.plugins.android.application)
@@ -6,14 +9,17 @@ plugins {
 android {
     namespace = "com.example.influenza"
     compileSdk = 34
+    // Specify which files to keep uncompressed
 
+
+
+    androidResources
     defaultConfig {
         applicationId = "com.example.influenza"
         minSdk = 28
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
