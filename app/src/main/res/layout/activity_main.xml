@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,14 +11,23 @@
         android:orientation="vertical">
 
         <!-- Age Input -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="3dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/logo" />
+
         <EditText
             android:id="@+id/editTextAge"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Enter Age"
+            android:hint="Enter Patient Age"
             android:textAlignment="center"
             android:inputType="number"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="12dp"
             android:layout_marginBottom="16dp"/>
 
         <!-- Gender Radio Group -->
@@ -183,9 +192,8 @@
         <TextView
             android:id="@+id/textViewResult"
             android:layout_width="match_parent"
-            android:layout_height="78dp"
+            android:layout_height="150dp"
             android:layout_marginTop="16dp"
-
             android:layout_marginBottom="15dp"
             android:textAlignment="center"
             android:textSize="20dp"
